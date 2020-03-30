@@ -1,4 +1,4 @@
-# jenkins-master-slave setup
+# Docker Jenkins-master-slave setup on AWS or Ubuntu
 
 It is pretty common when starting with Jenkins to have a single server which runs the master and all builds, however Jenkins architecture is fundamentally "Master+Agent". The master is designed to do co-ordination and provide the GUI and API endpoints, and the Agents are designed to perform the work. The reason being that workloads are often best "farmed out" to distributed servers.  
 
@@ -22,8 +22,8 @@ This document explains jenkins master slave setup on docker containers.
 ## Assumptions
 
 * Install terraform on local - https://www.terraform.io/intro/getting-started/install.html 
-* Learn basics of aws and terraform - Watch https://www.youtube.com/watch?v=XuQnaqm725w&t=7s 
-* Knows basics of docker commands - Watch https://www.youtube.com/watch?v=hB-oMjTZ77c&t=23s  
+* Learn basics of aws and terraform - Watch <youtube link> 
+* Knows basics of docker commands - Watch <youtube link>
 * Open appropriate ports - Terraform from this repo can be used for this:
   - 2376 - Between master and slave
   - 22 - Between master and slave
@@ -41,7 +41,7 @@ Execute below steps:
 * Clone git repo and execute below steps:
 
 ```
-git clone git@github.com:aveeva-devops/jenkins-master-slave.git
+git clone https://github.com/prateekdevisingh/docker-jenkins-master-slave.git
 
 ```
 
